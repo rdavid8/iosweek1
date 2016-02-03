@@ -16,6 +16,7 @@
 		3A9EDD671C629C870022F22E /* TodoDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9EDD661C629C870022F22E /* TodoDo.swift */; };
 		3A9EDD691C629DDD0022F22E /* TodoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9EDD681C629DDD0022F22E /* TodoList.swift */; };
 		3A9EDD6B1C629DFD0022F22E /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9EDD6A1C629DFD0022F22E /* Todo.swift */; };
+		3A9EDD6D1C62B9420022F22E /* TodoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9EDD6C1C62B9420022F22E /* TodoListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		3A9EDD661C629C870022F22E /* TodoDo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoDo.swift; sourceTree = "<group>"; };
 		3A9EDD681C629DDD0022F22E /* TodoList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoList.swift; sourceTree = "<group>"; };
 		3A9EDD6A1C629DFD0022F22E /* Todo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
+		3A9EDD6C1C62B9420022F22E /* TodoListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				1CA2F70C1C3C2B6400757A21 /* HomeViewController.swift */,
+				3A9EDD6C1C62B9420022F22E /* TodoListViewController.swift */,
 				3A9EDD681C629DDD0022F22E /* TodoList.swift */,
 				3A9EDD661C629C870022F22E /* TodoDo.swift */,
 				3A9EDD6A1C629DFD0022F22E /* Todo.swift */,
@@ -189,6 +192,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A9EDD671C629C870022F22E /* TodoDo.swift in Sources */,
+				3A9EDD6D1C62B9420022F22E /* TodoListViewController.swift in Sources */,
 				3A9EDD6B1C629DFD0022F22E /* Todo.swift in Sources */,
 				1CA2F70D1C3C2B6400757A21 /* HomeViewController.swift in Sources */,
 				3A9EDD691C629DDD0022F22E /* TodoList.swift in Sources */,

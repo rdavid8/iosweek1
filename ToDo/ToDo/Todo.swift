@@ -31,11 +31,11 @@ class Todo: NSObject, NSCoding
         guard let quantity = aDecoder.decodeObjectForKey("quantity") as? Int else { fatalError("404") }
         guard let date = aDecoder.decodeObjectForKey("date") as? Int else { fatalError("404") }
         guard let identifier = aDecoder.decodeObjectForKey("identifier") as? String else { fatalError("identifier is not a string") }
-       
+        
         self.init(listItem: listItem, descript: descript, quantity: quantity, date: date, identifier: identifier)
     }
-
-        func encodeWithCoder(aCoder: NSCoder)
+    
+    func encodeWithCoder(aCoder: NSCoder)
     {
         aCoder.encodeObject(self.listItem, forKey: "listItem")
         aCoder.encodeObject(self.descript, forKey: "descript")
@@ -44,4 +44,6 @@ class Todo: NSObject, NSCoding
         aCoder.encodeObject(self.identifier, forKey: "identifier")
         
     }
+    
 }
+

@@ -32,10 +32,10 @@ extension TodoDo
         self.items = self.items.filter({ (otherObject) -> Bool in
             return object.identifier != otherObject.identifier
         })
-}
+    }
     func removeAllObjects()
-{
-    self.items.removeAll()
+    {
+        self.items.removeAll()
     }
     func allObjects() -> [Object]
     {
