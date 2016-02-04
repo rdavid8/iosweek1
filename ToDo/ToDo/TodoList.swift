@@ -12,10 +12,23 @@ class TodoList: TodoDo
 {
     typealias List = Todo
     
-    var items = [List]()
-    
+    var items: [List]
+
     static let shared = TodoList()
     
-    private init() {}
-    
-}
+    private init()
+    {
+        guard let data = NSData(contentsOfURL: NSURL.archiveURL()) else {
+            self.items = [List]()
+            return
+        }
+        guard let storedObject = NSKeyedUnarchiver.unarchiveObjectWithData(data) as? [Object] else {
+            self.items = [List]()
+            return
+        }
+        self.items = storedObject
+    }
+
+    }
+
+
