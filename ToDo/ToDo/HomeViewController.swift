@@ -30,6 +30,8 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     func configureCell(indexPath: NSIndexPath) -> UITableViewCell {
         let cell = self.tableView.dequeueReusableCellWithIdentifier("todoCell", forIndexPath: indexPath)
         
+        let item = TodoList.shared.objectAtIndex(indexPath.row) // knows what to display for item.
+        cell.textLabel?.text = item?.descript // assigned description to that cell
         // Missing model.
         // Missing setup.
         
@@ -39,7 +41,7 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     // MARK: UITableViewDataSource
 
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return TodoList.shared.count() //will display this number of
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -55,7 +57,9 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         if editingStyle == .Delete {
             
-            // Missing model.
+            TodoList.shared.removeObjectAtIndexPath(indexPath) // implement deletion of it
+//            Store.shared.removeObject(Store.shared.objectAtIndex(indexPath.row)) //optional way
+            // Missing model. delete object from model
             
             tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.Fade)
         }
