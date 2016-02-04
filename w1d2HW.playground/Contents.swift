@@ -38,7 +38,7 @@ planets.reduce("") { (a, b) -> String in // going through array and reducing to 
 //4.Declare a dictionary of string values. Declare a function that takes in a string and searches dictionary for it. Use filter
 
 let greetingDictionary = ["Morning" : "Good Morning", "Afternoon" : "Good Afternoon", "Evening" : "Good Evening"]
-let filter = greetingDictionary.filter { (day, greeting) -> Bool in
+let filter = greetingDictionary.filter { (day, greeting) -> Bool in //filtering through array checking for key and value return true
     return day == "Morning"
     }
 
